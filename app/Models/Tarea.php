@@ -15,9 +15,4 @@ class Tarea extends Model
         'descripcion',
         'estado'
     ];
-
-    public function usuarios()
-    {
-        return $this->belongsToMany(Usuario::class, 'tarea_usuario', 'id_tarea', 'id_usuario');
-    }
 }
